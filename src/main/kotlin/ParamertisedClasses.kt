@@ -1,5 +1,7 @@
-
-data class Course(val name:String)
+/*
+Here T indicates generics(which is of any type like int,float,string etc),
+basically we define type at runtime
+ */
 
 class OddList<T>(private val list: List<T>){
 
@@ -7,6 +9,7 @@ class OddList<T>(private val list: List<T>){
         return list.filterIndexed { index, _ -> index%2 == 1 }
     }
 }
+data class Course(val name:String)
 
 fun main(){
     val items = listOf("kotlin","java","python","php")
