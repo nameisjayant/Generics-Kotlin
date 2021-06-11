@@ -10,7 +10,7 @@ class SomeClass<out T>(private val name:T){
 }
 
 fun main(){
-    val someClass = SomeClass("jayant")
+    val someClass = SomeClass("producer class")
     val ref:SomeClass<Any> = someClass
     print(ref.getName())
 }
